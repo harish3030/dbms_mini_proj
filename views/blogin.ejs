@@ -1,0 +1,87 @@
+<%- include('header'); -%>
+<body>
+    <!--<script type="text/javascript"  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->
+    <script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('error');
+    console.log(myParam);
+    if(myParam ) {
+        window.onload = setTimeout(function(){
+            alert(myParam);
+            window.location = 'http://localhost:3000/blogin';
+        }, 200)
+        
+    }
+
+    </script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> Blood Bank Management system <i class="icon-heart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+         
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="py-3 wrap-login200 bg-white pcontainInnerHoriz">
+            <form class="login100-form validate-form bg-white" method="post" action="/blogin">
+                <!--Title-->
+                <h2 style="display:none;" id="loginalert">Incorrect Credential</h2>
+               <% if (message.length>0) { %>
+                   
+                    
+                <script>
+                    // stringify the data passed from router to ejs (within the EJS template only)
+                      var parsed_data = ('<%- JSON.stringify(message) %>');
+                      //alert(parsed_data);
+                      window.onload = setTimeout(function(){
+                          alert(parsed_data);
+                    }, 200)
+                     
+                 
+                </script>
+                <% } %>
+               
+                <span class="pb-5 pt-3 login100-form-title">
+					Sign In
+				</span>
+                <!--End Title-->
+                <!--Inputs-->
+               
+                <div class="wrap-input200 validate-input m-b-20" data-validate="Enter blood bank id">
+                    <input class="input100" type="number" name="id" placeholder="Blood Bank id">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input200 validate-input m-b-20" data-validate="Enter password">
+                    <input class="input100" type="password" name="password" placeholder="password">
+                    <span class="focus-input100"></span>
+                </div>
+                <!--End Inputs-->
+                <!--Remember Me and Forgot Me-->
+              
+                <!--End Remember Me and Forgot Me-->
+                <!--Login Button-->
+                <div class="container-login100-form-btn pt-2">
+                    <button class="login100-form-btn btn" type="submit">
+						Log in
+					</button>
+                   
+                   
+                </div>
+                <!--End Login Button-->
+                <!--Login with social media-->
+                
+                <!--End Login with social media-->
+            </form>
+        </div>
+    </div>
+    <!-- loader -->
+    <%- include('footer'); -%>
+   

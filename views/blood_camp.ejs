@@ -1,0 +1,60 @@
+<%- include('header'); -%>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> Blood Bank Management system <i class="icon-heart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="py-3 wrap-login100 bg-white pcontainInnerHoriz md-form">
+            <form class="login100-form validate-form bg-white" method="post" action="/campavail">
+                <!--Title-->
+                <span class="pb-3 pt-3 login100-form-title">
+					Camp Registration
+				</span>
+                <!--End Title-->
+                <!--Inputs-->
+                <div class="wrap-input100 validate-input m-b-10" data-validate="Enter date">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-10" data-validate="Enter blood bank name">
+                    <input class="input100" type="text" name="blood bank" placeholder="blood bank">
+                    <span class="focus-input100"></span>
+                </div>
+               
+               
+                    
+                  
+               
+                <!--End Remember Me and Forgot Me-->
+                <!--Login Button-->
+                <div class="container-login100-form-btn pt-2">
+                    <button class="login100-form-btn btn" type="submit">
+						Register
+					</button>
+                </div>
+                
+                <!--End Login with social media-->
+            </form>
+        </div>
+    </div>
+    <!-- loader -->
+    <%- include('footer'); -%>
+    

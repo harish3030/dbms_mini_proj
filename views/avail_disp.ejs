@@ -1,0 +1,53 @@
+<%- include('header'); -%>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> Blood Bank Management system <i class="icon-heart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="py-3 wrap-login100 bg-white pcontainInnerHoriz">
+            <div class=" col-md-9 col-lg-9 "> 
+                <table class="table table-user-information">
+                    <tbody>
+                        <tr>
+                            <td>Units</td>
+                            <td>Bloodcomp</td>
+                            <td>Bloodgroup</td>
+                        </tr>
+               
+                    <tr>
+                       
+                        <td><%=data.Units%> </td>
+                        <td><%=data.Bloodcomp%></td>
+                        <td><%=data.Bloodgroup%></td>
+                      </tr>
+                      
+                      
+                
+                 
+            </tbody>
+            </table>
+        </div>
+            
+    </div>
+    </div>
+
+
+<%- include('footer'); -%>

@@ -1,0 +1,16 @@
+.list-group {
+    position:absolute;
+    top: 200px;
+    margin:auto;
+    float:left;
+    padding-top:40px;
+    padding-bottom: 30px;
+   }
+   .lead {
+    
+    margin:auto;
+    left:0;
+    right:0;
+    padding-top:10%;
+   }
+   

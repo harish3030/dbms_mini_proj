@@ -1,0 +1,82 @@
+<%- include('header'); -%>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> Blood Bank Management system<i class="icon-heart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+           
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="py-3 wrap-login300 bg-white pcontainInnerHoriz">
+           
+            <form class="login100-form validate-form bg-white" method="post" action="/campreg">
+                <!--Title-->
+                <span class="pb-3 pt-3 login100-form-title">
+					Camp register
+				</span>
+                <!--End Title-->
+                <!--Inputs-->
+                <div class="container m-t-10">
+                    <label>State:
+                </label>
+                <select id="bloodType" class="d-block"  name ="state" required> 
+                    <option value="" selected style="display:none">Choose one</option>
+                    <option value="Tamil Nadu">TamilNadu</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        
+            </select>
+                   
+                </div>
+                <div class="wrap-input200 validate-input m-t-10" data-validate="Enter district">
+                    <input class="input100" type="text" name="city" placeholder="District">
+                    <span class="focus-input100"></span>
+                </div>
+               
+                <div class="wrap-input100 validate-input m-t-10" data-validate="Enter date">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <span class="focus-input100"></span>
+                </div>
+               
+               
+                
+                
+                
+
+                <!--End Inputs-->
+                <!--Remember Me and Forgot Me-->
+                
+                <!--End Remember Me and Forgot Me-->
+                <!--Login Button-->
+                <br>
+                <div class="container-login100-form-btn pt-2">
+                    <button class="login100-form-btn btn" type="submit">
+					  Create
+					</button>
+                  
+                </div>
+                <!--End Login Button-->
+                <!--Login with social media-->
+                
+                <!--End Login with social media-->
+            </form>
+        </div>
+    </div>
+    <!-- loader -->
+    <%- include('footer'); -%>
+    

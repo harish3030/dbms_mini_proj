@@ -1,0 +1,58 @@
+<%- include('bheader'); -%>
+    
+
+<body>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('msg');
+        console.log(myParam);
+        if(myParam ) {
+            window.onload = setTimeout(function(){
+                alert(myParam);
+                window.location = 'http://localhost:3000/bprofile';
+            }, 200)
+           
+        }
+    
+        </script>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"> Blood Bank Management system <i class="icon-heart" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a href="/blogout" class="nav-link"><i class="fa fa-sign-out"></i><span>Sign out</span></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="centered">
+   
+        
+            <a href="/brequests" class="list-group-item "><i class="fa fa-question-circle"></i> <span>Pending Request</span></a>
+        <br>
+        <a href="/bdonations" class="list-group-item "><i class="fas fa-donate"></i> <span>Donation Request</span></a>
+        <br>
+        <a href="/bavailable" class="list-group-item "><i class="fa fa-info-circle"></i> <span>Availability</span></a>
+        <br>
+        <a href="/campreg" class="list-group-item "><i class="fas fa-registered"></i>  <span>Camp req</span></a>
+      
+        
+    
+    
+      </div>
+      </div> 
+      <%- include('footer1'); -%>
+    
