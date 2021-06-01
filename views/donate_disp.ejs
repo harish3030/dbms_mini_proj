@@ -4,7 +4,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Blood Bank Management system<i class="icon-heart" aria-hidden="true"></i></a>
+            <a class="navbar-brand" href="index.html"> Blood Bank <i class="icon-heart" aria-hidden="true"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -22,17 +22,18 @@
     <div class="hero-wrap js-fullheight">
         <div class="overlay"></div>
         <div id="particles-js"></div>
-        <div class="py-3 wrap-login100 bg-white pcontainInnerHoriz">
-            <div class=" col-md-9 col-lg-9 "> 
-                <table class="table table-user-information">
-                    <tbody>
-                        <tr>
-                            <td>DonationID</td>
-                            <td>UserID</td>
-                            <td>BloodBankID</td>
-                            <td>Donation date</td>
-                            <td>Status</td>
-                        </tr>
+        <div class="py-3 wrap-login900 bg-white pcontainInnerHoriz">
+            
+                <table class="table ">
+                  
+                        <thead>
+                            <th scope="col">DonationID</th>
+                            <th scope="col">UserID</th>
+                            <th scope="col">BloodBankID</th>
+                            <th scope="col">Donation date</th>
+                            <th scope="col">Status</th>
+                        </thead>
+                        <tbody>
                 <% for (var i = 0; i < data.length; i++) { %>
                     <tr>
                        
@@ -41,7 +42,7 @@
                         <td><%=data[i].BloodBankID%></td>
                         <td><%=data[i].date_donation.toDateString()%></td>
                         <td><%=data[i].status%></td>
-                        <td><a class="login100-form-btn btn" href="/bcomp_donations/<%= data[i].DonationID %>">
+                        <td><a class="login200-form-btn btn" href="/bcomp_donations/<%= data[i].DonationID %>">
                             Complete donation
                         </a></td>
                       </tr>
@@ -51,7 +52,7 @@
                 <% } %>
             </tbody>
             </table>
-        </div>
+        
             
     </div>
     </div>
