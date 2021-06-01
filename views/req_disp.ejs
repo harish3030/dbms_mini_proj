@@ -1,11 +1,10 @@
 <%- include('header'); -%>
-
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Blood Bank Management system <i class="icon-heart" aria-hidden="true"></i></a>
+            <a class="navbar-brand" href="index.html"> Blood Bank <i class="icon-heart" aria-hidden="true"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -23,25 +22,28 @@
     <div class="hero-wrap js-fullheight">
         <div class="overlay"></div>
         <div id="particles-js"></div>
-        <div class="py-3 wrap-login100 bg-white pcontainInnerHoriz">
-            <div class=" col-md-15 col-lg-15 "> 
-                <table class="table table-user-information">
-                    <tbody>
+        <div class="py-3 wrap-login900 bg-white pcontainInnerHoriz">
+            <!--<div class=" col-md-15 col-lg-15 "> -->
+                <table class="table">
+                     <thead>
                         <tr>
-                            <td>RequestID</td>
-                            <td>UserID</td>
-                            <td>BloodBankID</td>
-                            <td>blood_type</td>
-                            <td> blood_component</td>
-                            <td> status</td>
-                            <td> area</td>
-                            <td>date_time</td>
-                            <td>units</td>
+                        
+                            <th scope="col">RequestID</th>
+                            <th scope="col">UserID</th>
+                            <th scope="col">BloodBankID</th>
+                            <th scope="col">blood_type</th>
+                            <th scope="col"> blood_component</th>
+                            <th scope="col"> status</th>
+                            <th scope="col"> area</th>
+                            <th scope="col">date_time</th>
+                            <th scope="col">units</th>
                         </tr>
+                    </thead>
+                        <tbody>
                 <% for (var i = 0; i < data.length; i++) { %>
                     <tr>
-                       
-                        <td><%=data[i].requestid%> </td>
+                        
+                        <td><%= data[i].requestid%> </td>
                         <td><%=data[i].UserID%></td>
                         <td><%=data[i].BloodBankID%></td>
                         <td><%=data[i].blood_type%></td>
@@ -58,16 +60,16 @@
             </tbody>
             </table>
 
-        </div>
         
-            <a class="login100-form-btn btn" href="/bserve_requests">
+        
+            <button class="login100-form-btn btn" href="/bserve_requests">
                Serve Requests
             </button>
        
             
     </div>
-   
-    </div>
+</div>
+    
     
 
 
