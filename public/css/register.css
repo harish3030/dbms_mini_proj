@@ -174,10 +174,25 @@ button:hover {
 .wrap-login100 {
     width: 600px !important;
     border-radius: 10px;
+   margin: auto;
+    position: relative;
+    top: 18% !important;
+    left: 0;
+    z-index: 9999999;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.wrap-login900 {
+    width: 700px;
+    border-radius: 10px;
+    height: inherit;
     overflow: scroll;
     margin: auto;
-    position: relative;
-    top: 12% !important;
+    position: sticky;
+    
     left: 0;
     z-index: 9999999;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -384,6 +399,27 @@ input[type=number] {
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    line-height: 1.2;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+.login200-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #da5552;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
     line-height: 1.2;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
